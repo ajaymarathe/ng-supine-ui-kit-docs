@@ -1,0 +1,126 @@
+<div>
+<!--  base-navbar-->
+  <base-navbar bgType="dark" bgColor="primary">
+    <a class="navbar-brand text-uppercase" href="#">
+      <ng-fontawesome icon="leaf" ></ng-fontawesome>
+      Ng-supine <small class="text-muted"><sup>Docs</sup></small>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary btn-sm" target="_blank" href="http://preview.bootcatch.com">
+            <ng-fontawesome icon="rocket"></ng-fontawesome>
+            Live Preview</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light btn-sm" href="https://github.com/ajaymarathe/ng-supine-ui-kit-docs/archive/master.zip">
+            <ng-fontawesome icon="download"></ng-fontawesome>
+            Download
+          </a>
+        </li>
+      </ul>
+    </div>
+  </base-navbar>
+  <!--  main-section-->
+  <div class="main-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="sidebar">
+            <ul class="nav flex-column">
+              <li class="nav-item parent">
+                <a class="nav-link  active" >Getting Started</a>
+              </li>
+              <div class="child">
+                <li class="nav-item ">
+                  <a class="nav-link" routerLink="" >Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="license">License</a>
+                </li>
+              </div>
+              <li class="nav-item parent">
+                <a class="nav-link  active" >Components</a>
+              </li>
+              <div class="child">
+                <li class="nav-item ">
+                  <a class="nav-link" routerLink="button">base-button</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="alert">base-alert</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="badge">base-badge</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="card">base-card</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="carousel">base-carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="dropdown">base-dropdown</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="modal">base-modal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="navbar">base-navbar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="progress">base-progress</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="spinner">base-spinner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="close">close-button</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="pagination">pagination</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="forms">forms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="tooltip">tooltip</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="popover">popovers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="tabs">tabs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="images">images</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="typography">typography</a>
+                </li>
+              </div>
+              <li class="nav-item parent">
+                <a class="nav-link  active" >NPM Packages</a>
+              </li>
+              <div class="child">
+                <li class="nav-item ">
+                  <a class="nav-link text-lowercase" href="#" >NG-FONTAWESOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-lowercase" href="#">NG-MATERIAL</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 ">
+          <router-outlet></router-outlet>
+        </div>
+        <div class="col-md-2 border">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

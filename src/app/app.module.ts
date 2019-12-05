@@ -50,6 +50,7 @@ import { ImagesComponent } from './docs/images/images.component';
 import { TypographyComponent } from './docs/typography/typography.component';
 import { CloseComponent } from './docs/close/close.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -100,7 +101,7 @@ import { CloseComponent } from './docs/close/close.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgFontawesomeModule
+    NgFontawesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

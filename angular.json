@@ -29,12 +29,14 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/bootcatch-themes/dist/supine/bootstrap.min.css"
+              "./node_modules/bootcatch-themes/dist/supine/bootstrap.min.css",
+              "./src/assets/prism/prism.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/prism/prism.js"
             ]
           },
           "configurations": {

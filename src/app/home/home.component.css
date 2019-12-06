@@ -1,0 +1,26 @@
+.main-section .sidebar {
+  height: 100vh;
+  overflow: auto;
+  box-shadow: 2px 0 2.94px 0.06px rgba(4, 26, 55, 0.16);
+}
+.main-section .sidebar .parent a {
+  font-weight: 500;
+  color: #3c415d;
+  text-transform: uppercase;
+}
+.main-section .sidebar .child {
+  margin-left: 0.5rem;
+}
+.main-section .sidebar .child a {
+  color: #5d648e;
+  font-size: 14px;
+}
+.main-section .sidebar .child a:hover {
+  color: #3c415d;
+}
+.main-section .sidebar .child .nav-link {
+  padding-top: 0.1rem;
+  padding-bottom: 0.5rem;
+}
+
+/*# sourceMappingURL=home.component.css.map */

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgFontawesomeModule } from 'ng-fontawesome-icon';
+import { HighlightModule } from 'ngx-highlightjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,6 +50,9 @@ import { TabsComponent } from './docs/tabs/tabs.component';
 import { ImagesComponent } from './docs/images/images.component';
 import { TypographyComponent } from './docs/typography/typography.component';
 import { CloseComponent } from './docs/close/close.component';
+
+/*service*/
+import {HighlightService} from "./highlight.service";
 
 
 @NgModule({
@@ -102,8 +106,11 @@ import { CloseComponent } from './docs/close/close.component';
     BrowserModule,
     AppRoutingModule,
     NgFontawesomeModule,
+    HighlightModule
   ],
-  providers: [],
+  providers: [
+    HighlightService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

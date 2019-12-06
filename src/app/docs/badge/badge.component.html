@@ -1,1 +1,84 @@
-<p>badge works!</p>
+<div class="button">
+  <div class="container mt-4">
+    <div class="mb-4">
+      <h2>Base-Badge</h2>
+      <p>Documentation and examples for badges, our small count and labeling component.</p>
+      <h4>Default</h4>
+      <p>Default badge, pass <code class="bg-light font-fira-code">color</code>  as Input.</p>
+    </div>
+    <div class="mb-5">
+      <div class="mb-5">
+        <base-badge class="mr-2" color="primary">primary</base-badge>
+        <base-badge class="mr-2" color="secondary">secondary</base-badge>
+        <base-badge class="mr-2" color="info">info</base-badge>
+        <base-badge class="mr-2" color="success">success</base-badge>
+        <base-badge class="mr-2" color="danger">danger</base-badge>
+        <base-badge class="mr-2" color="warning">warning</base-badge>
+        <base-badge class="mr-2" color="light">light</base-badge>
+        <base-badge class="mr-2" color="dark">dark</base-badge>
+
+        <div class="accordion mt-2" id="accordionExample">
+          <div class="card border-0">
+            <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                Code
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body p-0">
+                    <pre><code class="language-markup">// pass color as Input
+&lt;base-badge color="primary">primary&lt;/base-badge>
+&lt;base-badge color="secondary">secondary&lt;/base-badge>
+&lt;base-badge color="info">info&lt;/base-badge>
+&lt;base-badge color="success">success&lt;/base-badge>
+&lt;base-badge color="danger">danger&lt;/base-badge>
+&lt;base-badge color="warning">warning&lt;/base-badge>
+&lt;base-badge color="light">light&lt;/base-badge>
+&lt;base-badge color="dark">dark&lt;/base-badge></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="mb-5">
+      <div class="mb-4">
+        <h4 >Pill</h4>
+        <p>Pill badge, pass <code class="bg-light font-fira-code">color & variant</code>  as Input.</p>
+      </div>
+      <base-badge class="mr-2" color="primary" variant="pill">primary</base-badge>
+      <base-badge class="mr-2" color="secondary" variant="pill">secondary</base-badge>
+      <base-badge class="mr-2" color="info" variant="pill">info</base-badge>
+      <base-badge class="mr-2" color="success" variant="pill">success</base-badge>
+      <base-badge class="mr-2" color="danger" variant="pill">danger</base-badge>
+      <base-badge class="mr-2" color="warning" variant="pill">warning</base-badge>
+      <base-badge class="mr-2" color="light" variant="pill">light</base-badge>
+      <base-badge class="mr-2" color="dark" variant="pill">dark</base-badge>
+
+      <div class="accordion mt-2" id="accordionExample">
+        <div class="card border-0">
+          <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#badgepill" aria-expanded="false" aria-controls="collapseTwo">
+            <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+              Code
+            </a>
+          </div>
+          <div id="badgepill" class="collapse"  data-parent="#accordionExample">
+            <div class="card-body p-0">
+                    <pre><code class="language-markup">// pass color & variant as Input
+&lt;base-badge color="primary" variant="pill">primary&lt;/base-badge>
+&lt;base-badge color="secondary" variant="pill">secondary&lt;/base-badge>
+&lt;base-badge color="info" variant="pill">info&lt;/base-badge>
+&lt;base-badge color="success" variant="pill">success&lt;/base-badge>
+&lt;base-badge color="danger" variant="pill">danger&lt;/base-badge>
+&lt;base-badge color="warning" variant="pill">warning&lt;/base-badge>
+&lt;base-badge color="light" variant="pill">light&lt;/base-badge>
+&lt;base-badge color="dark" variant="pill">dark&lt;/base-badge></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

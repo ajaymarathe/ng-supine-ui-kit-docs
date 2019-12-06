@@ -1,11 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.min.css";
-@import '~highlight.js/styles/github.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+//prism css
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-tomorrow.css";
+
 body{
   color: #5a688c !important;
+  //font-family: 'Open Sans', sans-serif !important;
+}
+.font-fira-code{
+  font-family: 'Fira Code', monospace !important;
+}
+p,pre, code,a,span, .btn{
+  //font-family: 'Open Sans', sans-serif !important;
 }
 h1,h2,h3,h4,h5,h6{
   color: #3e3e74;
+  //font-family: 'Open Sans', sans-serif !important;
 }
 .text-light-blue{
   color: #5d648e;
@@ -13,4 +26,13 @@ h1,h2,h3,h4,h5,h6{
 
 .accordion>.card:first-of-type {
    border-bottom: 1px solid lightgray !important;
+}
+pre code{
+  font-size:13px !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.language-markup{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }

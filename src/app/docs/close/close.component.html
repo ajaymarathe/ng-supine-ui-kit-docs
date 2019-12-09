@@ -1,1 +1,39 @@
-<p>close works!</p>
+<div class="button">
+  <div class="container mt-4">
+    <div class="mb-4">
+      <h2>close-button</h2>
+      <p>Simply Close button to close modal, alerts etc, Just <code class="bg-light font-fira-code">dismiss</code> Input to close.</p>
+    </div>
+    <div class="mb-5">
+      <div class="mb-5">
+        <h5>Example</h5>
+        <ul>
+          <li><code class="bg-light font-fira-code">&lt;close-button> &lt;/close-button> </code> </li>
+        </ul>
+        <div class="row">
+          <div class="col-md-1 mb-4">
+            <close-button dismiss="alert"></close-button>
+          </div>
+        </div>
+
+        <div class="accordion mt-2" id="cardAccordion">
+          <div class="card border-0">
+            <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                Code
+              </a>
+            </div>
+            <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+              <div class="card-body p-0">
+                    <pre><code class="language-markup">//just pass the dismiss Input
+&lt;close-button dismiss="alert">&lt;/close-button></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

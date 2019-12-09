@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'card', component: CardComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'carousel', component: CarouselComponent },
-  { path: 'close_button', component: CloseComponent },
+  { path: 'close', component: CloseComponent },
   { path: 'dropdown', component: DropdownComponent },
   { path: 'forms', component: FormsComponent },
   { path: 'images', component: ImagesComponent },

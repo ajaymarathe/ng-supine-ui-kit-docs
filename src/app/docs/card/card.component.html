@@ -1,21 +1,118 @@
 <div class="button">
   <div class="container mt-4">
     <div class="mb-4">
-      <h2>Base-Button</h2>
-      <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
-      <h4>Examples</h4>
-      <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+      <h2>Base-Card</h2>
+      <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+      <h4>About</h4>
+      <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of
+        content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels,
+        wells, and thumbnails. </p>
     </div>
     <div class="mb-5">
       <div class="mb-5">
-        <base-button class="mr-2" color="primary">primary</base-button>
-        <base-button class="mr-2" color="secondary">secondary</base-button>
-        <base-button class="mr-2" color="info">info</base-button>
-        <base-button class="mr-2" color="success">success</base-button>
-        <base-button class="mr-2" color="danger">danger</base-button>
-        <base-button class="mr-2" color="warning">warning</base-button>
-        <base-button class="mr-2" color="light">light</base-button>
-        <base-button class="mr-2" color="dark">dark</base-button>
+        <h5>Example</h5>
+        <ul>
+          <li><code class="bg-light font-fira-code">&lt;base-card>  &lt;/base-card> </code> </li>
+          <li><code class="bg-light font-fira-code">&lt;base-card-header> &lt;/base-card-header> </code> </li>
+          <li><code class="bg-light font-fira-code"> &lt;base-card-body> &lt;/base-card-body> </code></li>
+          <li><code class="bg-light font-fira-code">&lt;base-card-footer> &lt;/base-card-footer> </code></li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <base-card >
+              <img class="img-fluid" src="../../../assets/img/green-min.jpg" alt="">
+              <base-card-body>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <base-button color="primary">Go Foo</base-button>
+              </base-card-body>
+            </base-card>
+          </div>
+          <div class="col-md-6">
+            <base-card >
+              <img class="img-fluid" src="../../../assets/img/fashion6.jpg" alt="">
+              <base-card-body>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <base-button color="primary">Go Foo</base-button>
+              </base-card-body>
+            </base-card>
+          </div>
+        </div>
+
+
+        <div class="accordion mt-2" id="cardAccordion">
+          <div class="card border-0">
+            <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+              <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                Code
+              </a>
+            </div>
+            <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+              <div class="card-body p-0">
+                    <pre><code class="language-markup">
+&lt;div class="row">
+  &lt;div class="col-md-6">
+    &lt;base-card >
+      &lt;img class="img-fluid" src="../../../assets/img/green-min.jpg" alt="">
+      &lt;base-card-body>
+        &lt;h5 class="card-title">Card title&lt;/h5>
+        &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p>
+        &lt;base-button color="primary">Go Foo&lt;/base-button>
+      &lt;/base-card-body>
+    &lt;/base-card>
+  &lt;/div>
+  &lt;div class="col-md-6">
+    &lt;base-card >
+      &lt;img class="img-fluid" src="../../../assets/img/fashion6.jpg" alt="">
+      &lt;base-card-body>
+        &lt;h5 class="card-title">Card title&lt;/h5>
+        &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p>
+        &lt;base-button color="primary">Go Foo&lt;/base-button>
+      &lt;/base-card-body>
+    &lt;/base-card>
+  &lt;/div>
+&lt;/div> </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5">
+        <div class="row">
+          <div class="col-md-4">
+            <base-card >
+              <h5>Default Card</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </base-card>
+          </div>
+          <div class="col-md-4">
+            <base-card >
+              <base-card-header>
+                base-card-header
+              </base-card-header>
+              <base-card-body>
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </base-card-body>
+            </base-card>
+          </div>
+          <div class="col-md-4">
+            <base-card >
+              <base-card-header>
+                base-card-header
+              </base-card-header>
+              <base-card-body>
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </base-card-body>
+              <base-card-footer>
+                base-card-footer
+              </base-card-footer>
+            </base-card>
+          </div>
+        </div>
+
 
         <div class="accordion mt-2" id="accordionExample">
           <div class="card border-0">
@@ -24,17 +121,42 @@
                 Code
               </a>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body p-0">
-                    <pre><code class="language-markup">// pass color as Input
-&lt;base-button color="primary" >primary &lt;/base-button>
-&lt;base-button color="secondary" >secondary &lt;/base-button>
-&lt;base-button color="info" >info &lt;/base-button>
-&lt;base-button color="success" >success &lt;/base-button>
-&lt;base-button color="danger" >danger &lt;/base-button>
-&lt;base-button color="warning" >warning &lt;/base-button>
-&lt;base-button color="light" >light &lt;/base-button>
-&lt;base-button color="dark" >dark &lt;/base-button></code></pre>
+                    <pre><code class="language-markup">
+&lt;div class="row">
+  &lt;div class="col-md-4">
+    &lt;base-card >
+      &lt;h5>Default Card&lt;/h5>
+       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    &lt;/base-card>
+  &lt;/div>
+  &lt;div class="col-md-4">
+    &lt;base-card >
+      &lt;base-card-header>
+        base-card-header
+      &lt;/base-card-header>
+      &lt;base-card-body>
+        &lt;h4 class="card-title">Card Title&lt;/h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      &lt;/base-card-body>
+    &lt;/base-card>
+  &lt;/div>
+  &lt;div class="col-md-4">
+    &lt;base-card >
+      &lt;base-card-header>
+        base-card-header
+      &lt;/base-card-header>
+      &lt;base-card-body>
+        &lt;h4 class="card-title">Card Title&lt;/h4>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      &lt;/base-card-body>
+      &lt;base-card-footer>
+        base-card-footer
+      &lt;/base-card-footer>
+    &lt;/base-card>
+  &lt;/div>
+&lt;/div></code></pre>
               </div>
             </div>
           </div>

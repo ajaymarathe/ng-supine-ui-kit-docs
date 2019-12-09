@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HighlightService } from '../../highlight.service';
 
 @Component({
   selector: 'app-carousel',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private highlightService: HighlightService) { }
   ngOnInit() {
+    this.highlightService.highlightAll();
   }
 
 }

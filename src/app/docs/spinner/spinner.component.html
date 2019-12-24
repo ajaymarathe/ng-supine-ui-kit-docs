@@ -1,1 +1,68 @@
-<p>spinner works!</p>
+<div class="button">
+    <div class="container mt-4">
+      <div class="mb-4">
+        <h2>Base-Spinner</h2>
+        <p>Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.</p>
+      </div>
+      <div class="mb-5">
+        <div class="mb-5">
+          <h5>Example</h5>
+          <ul>
+            <li> pass <code class="bg-light font-fira-code">width</code>,  
+                <code class="bg-light font-fira-code">height</code> , 
+                <code class="bg-light font-fira-code">animation</code> , 
+                <code class="bg-light font-fira-code">color</code> , 
+                <code class="bg-light font-fira-code">type</code>
+                 as Input. 
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+                <h5 class="mb-4">Border</h5>
+                <base-spinner type="border" color="primary" size="3"></base-spinner>
+                <base-spinner type="border" color="secondary" size="3"></base-spinner>
+                <base-spinner type="border" color="success" size="3"></base-spinner>
+                <base-spinner type="border" color="danger" size="3"></base-spinner>
+                <base-spinner type="border" color="warning" size="3"></base-spinner>
+                <base-spinner type="border" color="info" size="3"></base-spinner>
+                <base-spinner type="border" color="light" size="3"></base-spinner>
+                <base-spinner type="border" color="dark" size="3"></base-spinner>
+              </div>
+              <div class="col-md-6 mb-4">
+                <h5 class="mb-4">grow</h5>
+                <base-spinner type="grow" color="primary" size="3"></base-spinner>
+                <base-spinner type="grow" color="secondary" size="3"></base-spinner>
+                <base-spinner type="grow" color="success" size="3"></base-spinner>
+                <base-spinner type="grow" color="danger" size="3"></base-spinner>
+                <base-spinner type="grow" color="warning" size="3"></base-spinner>
+                <base-spinner type="grow" color="info" size="3"></base-spinner>
+                <base-spinner type="grow" color="light" size="3"></base-spinner>
+                <base-spinner type="grow" color="dark" size="3"></base-spinner>
+              </div>
+          </div>
+  
+  
+          <div class="accordion mt-2" id="cardAccordion">
+            <div class="card border-0">
+              <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                  Code
+                </a>
+              </div>
+              <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+                <div class="card-body p-0">
+                      <pre><code class="language-markup"> // pass type, color and size as Input.
+&lt;base-spinner type="border" color="primary" size="3">&lt;/base-spinner>
+&lt;base-spinner type="grow" color="primary" size="3">&lt;/base-spinner>
+</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  

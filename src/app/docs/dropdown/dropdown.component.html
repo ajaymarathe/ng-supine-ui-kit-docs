@@ -1,1 +1,45 @@
-<p>dropdown works!</p>
+<div class="button">
+    <div class="container mt-4">
+      <div class="mb-4">
+        <h2>Base-Dropdown</h2>
+        <p>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
+        <h4>Examples</h4>
+      </div>
+      <div class="mb-5">
+        <div class="mb-5">
+          <base-dropdown>
+            <a class="nav-link" data-toggle="dropdown" >base-dropdown</a>
+            <base-dropdown-menu >
+                <a class="dropdown-item" >Login</a>
+                <a class="dropdown-item" >Register</a>    
+            </base-dropdown-menu>
+          </base-dropdown>
+  
+          <div class="accordion mt-2" id="accordionExample">
+            <div class="card border-0">
+              <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                  Code
+                </a>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                      <pre><code class="language-markup">// pass align  as Input in base-dropdown-menu
+&lt;base-dropdown>
+    &lt;a class="nav-link" data-toggle="dropdown" >base-dropdown&lt;/a>
+    &lt;base-dropdown-menu >
+        &lt;a class="dropdown-item" >Login&lt;/a>
+        &lt;a class="dropdown-item" >Register&lt;/a>    
+    &lt;/base-dropdown-menu>
+&lt;/base-dropdown></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  

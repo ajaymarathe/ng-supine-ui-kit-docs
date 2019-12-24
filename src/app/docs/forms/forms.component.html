@@ -1,1 +1,182 @@
-<p>forms works!</p>
+<div class="button">
+    <div class="container mt-4">
+      <div class="mb-4">
+        <h2>Forms</h2>
+        <p>Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
+      </div>
+      <div class="mb-5">
+        <div class="mb-5">
+          <div class="row">
+            <div class="col-md-12 mb-4">
+                <h4 class="mb-4">forms</h4>
+                <div class="row">
+                    <div class="col-md-4 ">
+                    <div class="form-group">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="email" class="form-control border border-success" aria-describedby="emailHelp" placeholder="success">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="email" class="form-control border border-danger" aria-describedby="emailHelp" placeholder="danger">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="disabled" disabled>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                            <ng-fontawesome icon="search"></ng-fontawesome>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                </div>
+                <h4 class="mb-4">Checkboxes & Radio</h4>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" checked>
+                        <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                        </label>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+  
+  
+          <div class="accordion mt-2" id="cardAccordion">
+            <div class="card border-0">
+              <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                  Code
+                </a>
+              </div>
+              <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+                <div class="card-body p-0">
+                      <pre><code class="language-markup"> // It's pure bootstrap.
+&lt;h4 class="mb-4">forms&lt;/h4>
+&lt;div class="row">
+    &lt;div class="col-md-4 ">
+        &lt;div class="form-group">
+            &lt;input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email">
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="form-group">
+            &lt;input type="email" class="form-control border border-success" aria-describedby="emailHelp" placeholder="success">
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="form-group">
+            &lt;input type="email" class="form-control border border-danger" aria-describedby="emailHelp" placeholder="danger">
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="form-group">
+            &lt;input type="email" class="form-control" aria-describedby="emailHelp" placeholder="disabled" disabled>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="input-group mb-3">
+            &lt;div class="input-group-prepend">
+            &lt;span class="input-group-text" id="basic-addon1">@&lt;/span>
+            &lt;/div>
+            &lt;input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="input-group mb-3">
+            &lt;div class="input-group-prepend">
+                &lt;span class="input-group-text" id="basic-addon1">
+                &lt;ng-fontawesome icon="search">&lt;/ng-fontawesome>
+                &lt;/span>
+            &lt;/div>
+            &lt;input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;h4 class="mb-4">Checkboxes & Radio&lt;/h4>
+&lt;div class="row mb-4">
+    &lt;div class="col-md-4">
+    &lt;div class="form-check">
+        &lt;input class="form-check-input" type="checkbox" value="" checked>
+        &lt;label class="form-check-label" for="defaultCheck1">
+        Default checkbox
+        &lt;/label>
+    &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+    &lt;div class="form-check">
+        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;div class="row">
+    &lt;div class="col-md-4">
+        &lt;div class="form-check">
+            &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            &lt;label class="form-check-label" for="exampleRadios1">
+            Default radio
+            &lt;/label>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-4">
+        &lt;div class="form-check">
+            &lt;input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+
+

@@ -1,1 +1,64 @@
-<p>progress works!</p>
+<div class="button">
+    <div class="container mt-4">
+      <div class="mb-4">
+        <h2>Base-Progress</h2>
+        <p>Documentation and examples for using Bootstrap custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.</p>
+      </div>
+      <div class="mb-5">
+        <div class="mb-5">
+          <h5>Example</h5>
+          <ul>
+            <li> pass <code class="bg-light font-fira-code">width</code>,  
+                <code class="bg-light font-fira-code">height</code> , 
+                <code class="bg-light font-fira-code">animation</code> , 
+                <code class="bg-light font-fira-code">color</code> , 
+                <code class="bg-light font-fira-code">type</code>
+                 as Input. 
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="mb-2">
+                    <base-progress width="20" height="0.2" ></base-progress>
+                  </div>
+                  <div class="mb-2">
+                    <base-progress color="info" width="30" height="0.5" ></base-progress>
+                  </div>
+                  <div class="mb-2">
+                    <base-progress color="warning" width="40" height="1.2" type="striped"></base-progress>
+                  </div>
+                  <div class="mb-2">
+                    <base-progress color="success" width="60" height="1.5" type="striped"></base-progress>
+                  </div>
+                  <div class="mb-2">
+                    <base-progress color="danger" width="80" height="2" type="striped" animation="animated"></base-progress>
+                  </div>
+            </div>
+          </div>
+  
+  
+          <div class="accordion mt-2" id="cardAccordion">
+            <div class="card border-0">
+              <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                  Code
+                </a>
+              </div>
+              <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+                <div class="card-body p-0">
+                      <pre><code class="language-markup"> //  pass width, height, type, color & animation as Input.
+&lt;div class="mb-2">
+    &lt;base-progress color="danger" width="80" height="2" type="striped" animation="animated">&lt;/base-progress>
+&lt;/div>
+</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  

@@ -1,1 +1,83 @@
-<p>navbar works!</p>
+<div class="button">
+    <div class="container mt-4">
+      <div class="mb-4">
+        <h2>Base-Navbar</h2>
+        <p>Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
+      </div>
+      <div class="mb-5">
+        <div class="mb-5">
+          <h5>Example</h5>
+          <ul>
+            <li> pass <code class="bg-light font-fira-code">size</code>,  
+                <code class="bg-light font-fira-code">bgType</code> & 
+                <code class="bg-light font-fira-code">bgColor</code>
+                 as Input. </li>
+          </ul>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <base-navbar size="3" bgType="dark" bgColor="primary">
+                      <div class="container">
+                        <a class="navbar-brand text-uppercase" href="#">NG-SUPINE</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                          <ng-fontawesome class="text-white" icon="angle-double-down"></ng-fontawesome>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav  ml-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">
+                                Home
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </base-navbar>
+                </div>
+            </div>
+          </div>
+  
+  
+          <div class="accordion mt-2" id="cardAccordion">
+            <div class="card border-0">
+              <div class="card-header border-0 pt-2 pb-2 border-bottom d-flex justify-content-center" style="cursor: pointer" id="headingTwo" data-toggle="collapse" data-target="#cardCollpase" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="mb-0 collapsed text-center" style="font-size: 14px;"   >
+                  Code
+                </a>
+              </div>
+              <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
+                <div class="card-body p-0">
+                      <pre><code class="language-markup"> // pass size, bgType & bgColor as Input.
+&lt;base-navbar size="3" bgType="dark" bgColor="primary">
+    &lt;div class="container">
+        &lt;a class="navbar-brand text-uppercase" href="#">NG-SUPINE&lt;/a>
+            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            &lt;ng-fontawesome class="text-white" icon="angle-double-down">&lt;/ng-fontawesome>
+        &lt;/button>
+        &lt;div class="collapse navbar-collapse" id="navbarNav">
+            &lt;ul class="navbar-nav  ml-auto">
+                &lt;li class="nav-item active">
+                    &lt;a class="nav-link" href="#">Home &lt;/a>
+                &lt;/li>
+                &lt;li class="nav-item">
+                    &lt;a class="nav-link" href="#">Features&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+&lt;/base-navbar>
+</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  

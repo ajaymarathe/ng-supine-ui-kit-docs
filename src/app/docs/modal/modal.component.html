@@ -8,6 +8,7 @@
         <div class="mb-5">
           <h5>Example</h5>
           <ul>
+            <li>Pass size in <code class="bg-light font-fira-code">sm, lg, xl</code></li>
             <li><code class="bg-light font-fira-code">&lt;base-modal>  &lt;/base-modal> </code> </li>
             <li><code class="bg-light font-fira-code">&lt;base-modal-header> &lt;/base-modal-header> </code> </li>
             <li><code class="bg-light font-fira-code"> &lt;base-modal-body> &lt;/base-modal-body> </code></li>
@@ -18,27 +19,100 @@
               <base-button color="primary" display="block" data-toggle="modal" data-target="#firstModal">
                 Demo Modal
               </base-button>
-
-                <base-modal target="firstModal">
-                    <base-modal-header>
-                      <h5 class="modal-title" >Spinner</h5>
-                      <close-button dismiss="modal"></close-button>
-                    </base-modal-header>
-                    <base-modal-body>
-                      <base-spinner type="border" color="primary"></base-spinner>
-                      <base-spinner type="border" color="secondary"></base-spinner>
-                      <base-spinner type="border" color="success"></base-spinner>
-                      <base-spinner type="border" color="info" size="4"></base-spinner>
-                      <base-spinner type="border" color="danger" size="4"></base-spinner>
-                      <base-spinner type="border" color="warning"></base-spinner>
-                      <base-spinner type="border" color="light"></base-spinner>
-                      <base-spinner type="border" color="dark"></base-spinner>
-                    </base-modal-body>
-                    <base-modal-footer>
-                      <base-button color="secondary" data-dismiss="modal">Close</base-button>
-                      <base-button color="primary">Save changes</base-button>
-                    </base-modal-footer>
-                </base-modal>
+              <base-modal target="firstModal">
+                <base-modal-header>
+                  <h5 class="modal-title" >Spinner</h5>
+                  <close-button dismiss="modal"></close-button>
+                </base-modal-header>
+                <base-modal-body>
+                  <base-spinner type="border" color="primary"></base-spinner>
+                  <base-spinner type="border" color="secondary"></base-spinner>
+                  <base-spinner type="border" color="success"></base-spinner>
+                  <base-spinner type="border" color="info" size="4"></base-spinner>
+                  <base-spinner type="border" color="danger" size="4"></base-spinner>
+                  <base-spinner type="border" color="warning"></base-spinner>
+                  <base-spinner type="border" color="light"></base-spinner>
+                  <base-spinner type="border" color="dark"></base-spinner>
+                </base-modal-body>
+                <base-modal-footer>
+                  <base-button color="secondary" data-dismiss="modal">Close</base-button>
+                  <base-button color="primary">Save changes</base-button>
+                </base-modal-footer>
+              </base-modal>
+            </div>
+            <div class="col-md-3">
+              <base-button color="secondary" display="block" data-toggle="modal" data-target="#secondModal">
+                Small Modal
+              </base-button>
+              <base-modal target="secondModal" size="sm">
+                <base-modal-header>
+                  <h5 class="modal-title" >Spinner</h5>
+                  <close-button dismiss="modal"></close-button>
+                </base-modal-header>
+                <base-modal-body>
+                  <base-spinner type="grow" color="primary"></base-spinner>
+                  <base-spinner type="grow" color="secondary"></base-spinner>
+                  <base-spinner type="grow" color="info"></base-spinner>
+                  <base-spinner type="grow" color="danger" size="4"></base-spinner>
+                  <base-spinner type="grow" color="warning" ></base-spinner>
+                  <base-spinner type="grow" color="light"></base-spinner>
+                  <base-spinner type="grow" color="success"></base-spinner>
+                </base-modal-body>
+                <base-modal-footer>
+                  <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                </base-modal-footer>
+              </base-modal>
+            </div>
+            <div class="col-md-3">
+              <base-button color="warning" display="block" data-toggle="modal" data-target="#thirdModal">
+                Large Modal
+              </base-button>
+              <base-modal target="thirdModal" size="lg">
+                <base-modal-header>
+                  <h5 class="modal-title" >Spinner</h5>
+                  <close-button dismiss="modal"></close-button>
+                </base-modal-header>
+                <base-modal-body>
+                  <base-spinner type="border" color="primary"></base-spinner>
+                  <base-spinner type="border" color="secondary"></base-spinner>
+                  <base-spinner type="border" color="success"></base-spinner>
+                  <base-spinner type="border" color="info" size="4"></base-spinner>
+                  <base-spinner type="border" color="danger" size="4"></base-spinner>
+                  <base-spinner type="border" color="warning"></base-spinner>
+                  <base-spinner type="border" color="light"></base-spinner>
+                  <base-spinner type="border" color="dark"></base-spinner>
+                </base-modal-body>
+                <base-modal-footer>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </base-modal-footer>
+              </base-modal>
+            </div>
+            <div class="col-md-3">
+              <base-button color="light" display="block" data-toggle="modal" data-target="#forthModal">
+                Extra large modal
+              </base-button>
+              <base-modal target="forthModal" size="xl">
+                <base-modal-header>
+                  <h5 class="modal-title" >Modal header</h5>
+                  <close-button dismiss="modal"></close-button>
+                </base-modal-header>
+                <base-modal-body>
+                  <base-spinner size="3" color="primary" type="grow"></base-spinner>
+                  <base-spinner size="3"  color="secondary" type="grow"></base-spinner>
+                  <base-spinner size="3"  color="danger" type="grow"></base-spinner>
+                  <base-spinner size="5"  color="warning" type="border"></base-spinner>
+                  <base-spinner size="5"  color="success" type="border"></base-spinner>
+                  <base-spinner size="3"  color="info" type="grow"></base-spinner>
+                  <base-spinner size="3"  color="light" type="grow"></base-spinner>
+                  <base-spinner size="3"  color="dark" type="grow"></base-spinner>
+                </base-modal-body>
+                <base-modal-footer>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </base-modal-footer>
+              </base-modal>
             </div>
           </div>
   
@@ -52,24 +126,81 @@
               </div>
               <div id="cardCollpase" class="collapse show" aria-labelledby="headingTwo" data-parent="#cardAccordion">
                 <div class="card-body p-0">
-                      <pre><code class="language-markup"> // pass target as Input, that you want target your modal.
-&lt;base-button color="primary" display="block" data-toggle="modal" data-target="#firstModal">
-    Demo Modal
-&lt;/base-button>
-
-&lt;base-modal target="firstModal">
-    &lt;base-modal-header>
+                      <pre><code class="language-markup"> // pass target & size as Input, that you want target your modal.
+&lt;div class="row">
+  &lt;div class="col-md-3">
+    &lt;base-button color="primary" display="block" data-toggle="modal" data-target="#firstModal">
+      Demo Modal
+    &lt;/base-button>
+    &lt;base-modal target="firstModal">
+      &lt;base-modal-header>
         &lt;h5 class="modal-title" >Spinner&lt;/h5>
         &lt;close-button dismiss="modal">&lt;/close-button>
-    &lt;/base-modal-header>
-    &lt;base-modal-body>
-        // body content here.
-    &lt;/base-modal-body>
-    &lt;base-modal-footer>
+      &lt;/base-modal-header>
+      &lt;base-modal-body>
+        // body content
+      &lt;/base-modal-body>
+      &lt;base-modal-footer>
         &lt;base-button color="secondary" data-dismiss="modal">Close&lt;/base-button>
         &lt;base-button color="primary">Save changes&lt;/base-button>
-    &lt;/base-modal-footer>
-&lt;/base-modal>
+      &lt;/base-modal-footer>
+    &lt;/base-modal>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;base-button color="secondary" display="block" data-toggle="modal" data-target="#secondModal">
+      Small Modal
+    &lt;/base-button>
+    &lt;base-modal target="secondModal" size="sm">
+      &lt;base-modal-header>
+        &lt;h5 class="modal-title" >Spinner&lt;/h5>
+        &lt;close-button dismiss="modal">&lt;/close-button>
+      &lt;/base-modal-header>
+      &lt;base-modal-body>
+        //body content
+      &lt;/base-modal-body>
+      &lt;base-modal-footer>
+        &lt;button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close&lt;/button>
+        &lt;button type="button" class="btn btn-primary btn-sm">Save changes&lt;/button>
+      &lt;/base-modal-footer>
+    &lt;/base-modal>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;base-button color="warning" display="block" data-toggle="modal" data-target="#thirdModal">
+      Large Modal
+    &lt;/base-button>
+    &lt;base-modal target="thirdModal" size="lg">
+      &lt;base-modal-header>
+        &lt;h5 class="modal-title" >Spinner&lt;/h5>
+        &lt;close-button dismiss="modal">&lt;/close-button>
+      &lt;/base-modal-header>
+      &lt;base-modal-body>
+        // body content
+      &lt;/base-modal-body>
+      &lt;base-modal-footer>
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal">Close&lt;/button>
+        &lt;button type="button" class="btn btn-primary">Save changes&lt;/button>
+      &lt;/base-modal-footer>
+    &lt;/base-modal>
+  &lt;/div>
+  &lt;div class="col-md-3">
+    &lt;base-button color="light" display="block" data-toggle="modal" data-target="#forthModal">
+      Extra large modal
+    &lt;/base-button>
+    &lt;base-modal target="forthModal" size="xl">
+      &lt;base-modal-header>
+        &lt;h5 class="modal-title" >Modal header&lt;/h5>
+        &lt;close-button dismiss="modal">&lt;/close-button>
+      &lt;/base-modal-header>
+      &lt;base-modal-body>
+        // body content
+      &lt;/base-modal-body>
+      &lt;base-modal-footer>
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal">Close&lt;/button>
+        &lt;button type="button" class="btn btn-primary">Save changes&lt;/button>
+      &lt;/base-modal-footer>
+    &lt;/base-modal>
+  &lt;/div>
+&lt;/div>
 </code></pre>
                 </div>
               </div>

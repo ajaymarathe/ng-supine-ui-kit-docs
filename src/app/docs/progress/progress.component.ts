@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HighlightService } from '../../highlight.service';
+
 
 @Component({
   selector: 'app-progress',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private highlightService: HighlightService) { }
+  
   ngOnInit() {
+    this.highlightService.highlightAll();
   }
 
 }

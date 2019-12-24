@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HighlightService } from '../../highlight.service';
 
 @Component({
   selector: 'app-tooltip',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TooltipComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private highlightService: HighlightService) { }
+  
   ngOnInit() {
+    this.highlightService.highlightAll();
   }
 
 }

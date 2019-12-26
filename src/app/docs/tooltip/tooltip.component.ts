@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HighlightService } from '../../highlight.service';
 
+declare var $;
+
 @Component({
   selector: 'app-tooltip',
   templateUrl: './tooltip.component.html',
@@ -12,6 +14,23 @@ export class TooltipComponent implements OnInit {
   
   ngOnInit() {
     this.highlightService.highlightAll();
+
+    this.EnableTooltip();
+    this.EnablePopOver();
+  }
+
+  /*Enable boostrap Tooltip*/
+  EnableTooltip(){
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  }
+
+  /*Enable Popover*/
+  EnablePopOver(){
+    $(function () {
+      $('[data-toggle="popover"]').popover();
+    });
   }
 
 }

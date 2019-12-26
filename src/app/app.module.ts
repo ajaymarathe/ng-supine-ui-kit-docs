@@ -30,6 +30,8 @@ import { BaseModalBodyComponent } from './components/base-modal/base-modal-body/
 import { BaseModalFooterComponent } from './components/base-modal/base-modal-footer/base-modal-footer.component';
 import { CloseButtonComponent } from './components/close-button/close-button.component';
 import { BaseAlertComponent } from './components/base-alert/base-alert.component';
+
+/* docs components */
 import { OverviewComponent } from './docs/overview/overview.component';
 import { LicenseComponent } from './docs/license/license.component';
 import { ButtonComponent } from './docs/button/button.component';
@@ -51,7 +53,7 @@ import { ImagesComponent } from './docs/images/images.component';
 import { TypographyComponent } from './docs/typography/typography.component';
 import { CloseComponent } from './docs/close/close.component';
 
-/*service*/
+/* highlightservice*/
 import {HighlightService} from "./highlight.service";
 
 
@@ -81,6 +83,8 @@ import {HighlightService} from "./highlight.service";
     BaseModalFooterComponent,
     CloseButtonComponent,
     BaseAlertComponent,
+
+    /* docs component */
     OverviewComponent,
     LicenseComponent,
     ButtonComponent,
